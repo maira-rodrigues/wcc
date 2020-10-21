@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/dado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:background="#1a237e"
+        android:fontFamily="@font/ubuntu"
+        android:lineSpacingExtra="8sp"
+        android:paddingLeft="5sp"
+        android:paddingTop="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="5sp"
+        android:text="@string/etiqueta_dado_2"
+        android:textColor="#b2ebf2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lanceDadosBotao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="84dp"
+        android:background="#1a237e"
+        android:fontFamily="@font/ubuntu"
+        android:paddingLeft="5sp"
+        android:paddingTop="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="5sp"
+        android:text="@string/etiqueta_dado_1"
+        android:textAlignment="center"
+        android:textColor="#b2ebf2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lanceDadosBotao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dado2"
+        app:layout_constraintStart_toStartOf="@+id/dado2" />
+
+    <Button
+        android:id="@+id/lanceDadosBotao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#b2ebf2"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/etiqueta_botao_lancar_dados"
+        android:textColor="#1a237e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
