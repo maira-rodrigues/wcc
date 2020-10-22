@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#e0f7fa"
     tools:context=".MainActivity">
 
     <TextView
@@ -51,7 +52,7 @@
         android:id="@+id/lanceDadosBotao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#b2ebf2"
+        android:backgroundTint="#18ffff"
         android:fontFamily="@font/ubuntu"
         android:text="@string/etiqueta_botao_lancar_dados"
         android:textColor="#1a237e"
