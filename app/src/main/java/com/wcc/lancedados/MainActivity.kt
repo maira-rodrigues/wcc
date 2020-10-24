@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +15,14 @@ class MainActivity : AppCompatActivity() {
         val dado2: ImageView = findViewById(R.id.dado2)
 
         botaoLancarDados.setOnClickListener {
-            val numero: Int = lancarDados()
-            dado1.setImageResource(escolherImagem(numero))
+            dado1.setImageResource(escolherImagem(gerarNumero()))
+            dado2.setImageResource(escolherImagem(gerarNumero()))
         }
+    }
+
+
+    fun lancaDado(): Int {
+        return escolherImagem(gerarNumero())
     }
 
     fun escolherImagem(numero: Int): Int{
@@ -33,11 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun lancarDados(): Int{
+    fun gerarNumero(): Int{
         return (1..6).random()
-    }
-    
-    fun doWhenClickOnButton(){
-        //todo
     }
 }
