@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun escolherImagem(numero: Int): Int{
-        when(numero){
+        return when(numero){
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
             3 -> R.drawable.dice_3
