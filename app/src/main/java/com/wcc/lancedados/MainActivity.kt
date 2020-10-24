@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,9 @@ class MainActivity : AppCompatActivity() {
             dado1.setImageResource(escolherImagem(gerarNumero()))
             dado2.setImageResource(escolherImagem(gerarNumero()))
         }
+        val playerName = getIntent().getStringExtra("playername")
+        val playerNameTextView = findViewById<TextView>(R.id.playerNameText)
+        playerNameTextView.text =  "Olá, $playerName"
     }
 
 
