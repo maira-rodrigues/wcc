@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e0f7fa"
+    android:background="#ffecb3"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/lanceDadosBotao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#18ffff"
+        android:backgroundTint="#ffb300"
         android:fontFamily="@font/ubuntu"
         android:text="@string/etiqueta_botao_lancar_dados"
         android:textColor="#1a237e"
@@ -25,6 +25,7 @@
         android:id="@+id/dado1"
         android:layout_width="91dp"
         android:layout_height="102dp"
+        android:background="#ffe082"
         app:layout_constraintBottom_toTopOf="@+id/lanceDadosBotao"
         app:layout_constraintEnd_toStartOf="@+id/dado2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -36,6 +37,7 @@
         android:id="@+id/dado2"
         android:layout_width="91dp"
         android:layout_height="102dp"
+        android:background="#ffe082"
         app:layout_constraintBottom_toTopOf="@+id/lanceDadosBotao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
